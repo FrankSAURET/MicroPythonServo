@@ -60,16 +60,16 @@ from time import sleep
 
 # Créer un objet Servo avec configuration personnalisée
 servo = Servo(pin=12, min=500, max=2500, max_angle=180)
-
-# Servo à 0 degrés
-servo.move(0)
-sleep(2)
-# Servo à 90 degrés
-servo.move(90)
-sleep(2)
-# Servo à 180 degrés
-servo.move(180)
-sleep(2)
+while True:
+        # Servo à 0 degrés
+        servo.move(0)
+        sleep(2)
+        # Servo à 90 degrés
+        servo.move(90)
+        sleep(2)
+        # Servo à 180 degrés
+        servo.move(180)
+        sleep(2)
         
 ```
 
@@ -146,8 +146,7 @@ from time import sleep
 # Create a Servo object with custom configuration
 servo = Servo(pin=12, min=500, max=2500, max_angle=180)
 
-try:
-    while True:
+while True:
         # Servo at 0 degrees
         servo.move(0)
         sleep(2)
@@ -157,11 +156,7 @@ try:
         # Servo at 180 degrees
         servo.move(180)
         sleep(2)
-        
-except KeyboardInterrupt:
-    print("Keyboard interrupt")
-    # Turn off PWM
-    servo.stop()
+)
 ```
 
 ## Author
