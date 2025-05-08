@@ -40,9 +40,9 @@ Servo(pin, min=500, max=2500, max_angle=180)
 | Paramètre | Description |
 |-----------|-------------|
 | `pin` | Le numéro de la broche GPIO du Micro Python connectée au servomoteur |
-| `min` | La largeur d'impulsion en microsecondes correspondant à l'angle minimum (0°), par défaut 500μs |
-| `max` | La largeur d'impulsion en microsecondes correspondant à l'angle maximum, par défaut 2500μs |
-| `max_angle` | Angle maximum du servomoteur en degrés, par défaut 180° |
+| `min` (optionnel) | La largeur d'impulsion en microsecondes correspondant à l'angle minimum (0°), par défaut 500μs |
+| `max` (optionnel) | La largeur d'impulsion en microsecondes correspondant à l'angle maximum, par défaut 2500μs |
+| `max_angle` (optionnel) | Angle maximum du servomoteur en degrés, par défaut 180° |
 
 ### Méthodes
 
@@ -118,9 +118,9 @@ Servo(pin, min=500, max=2500, max_angle=180)
 | Parameter | Description |
 |-----------|-------------|
 | `pin` | The GPIO pin number of the Raspberry Pi Pico connected to the servo motor |
-| `min` | The pulse width in microseconds corresponding to the minimum angle (0°), default 500μs |
-| `max` | The pulse width in microseconds corresponding to the maximum angle, default 2500μs |
-| `max_angle` | Maximum angle of the servo motor in degrees, default 180° |
+| `min` (optionnal)| The pulse width in microseconds corresponding to the minimum angle (0°), default 500μs |
+| `max` (optionnal)| The pulse width in microseconds corresponding to the maximum angle, default 2500μs |
+| `max_angle` (optionnal)| Maximum angle of the servo motor in degrees, default 180° |
 
 ### Methods
 
